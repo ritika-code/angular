@@ -11,9 +11,11 @@
     <body>
       <h1> Filters</<h1>
         <div ng-controller='MsgController'>
-          Original :{{sayMesssage()}}
-          Loves:{{ sayLovesMessage()}}
+          Original :{{sayMesssage()}}<br>
 
+          Loves:{{ sayLovesMessage()}}<br>
+          Truth:{{ sayLovesMessage()}} | truth :'healthy':'cookie'}<}<br>
+          BIG TRUTH :{{ sayLovesMessage() | truth : 'healhy': 'cookie' |}}
           <div>
             <button ng-click="feedYaakov()">feed yaakov</button>
             Cost:{{cookieCost | currency :'#blah': 4}}
